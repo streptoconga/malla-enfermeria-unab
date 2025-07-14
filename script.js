@@ -9,7 +9,8 @@ async function cargarMalla() {
     columna.classList.add('semestre');
 
     const titulo = document.createElement('h2');
-    titulo.textContent = `Semestre ${semestre.numero}`;
+    const sufijos = ["er", "do", "er", "to", "to", "to", "mo", "vo", "no", "mo"];
+titulo.textContent = `${semestre.numero}${sufijos[semestre.numero - 1]} semestre`;
     columna.appendChild(titulo);
 
     semestre.ramos.forEach((ramo) => {

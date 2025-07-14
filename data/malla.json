@@ -1,0 +1,19 @@
+{
+  "semestres": [
+    {
+      "numero": 1,
+      "ramos": [
+        { "codigo": "MORF011", "nombre": "Morfología integral", "desbloquea": ["EFER203"] },
+        { "codigo": "QUIM001", "nombre": "Química general", "desbloquea": ["BIOL166"] }
+      ]
+    },
+    {
+      "numero": 2,
+      "ramos": [
+        { "codigo": "EFER203", "nombre": "Bases del cuidado", "desbloquea": [] },
+        { "codigo": "BIOL166", "nombre": "Bioquímica", "desbloquea": [] }
+      ]
+    }
+  ],
+  "correquisitos": []
+}

@@ -3,15 +3,285 @@
     {
       "numero": 1,
       "ramos": [
-        { "codigo": "MORF011", "nombre": "Morfología integral", "desbloquea": ["EFER203"] },
-        { "codigo": "QUIM001", "nombre": "Química general", "desbloquea": ["BIOL166"] }
+        {
+          "codigo": "MORF011",
+          "nombre": "Morfolog\u00eda Integral",
+          "desbloquea": [
+            "EFER203",
+            "BIOL178"
+          ]
+        },
+        {
+          "codigo": "QUIM001",
+          "nombre": "Qu\u00edmica General y Org\u00e1nica",
+          "desbloquea": [
+            "BIOL166"
+          ]
+        },
+        {
+          "codigo": "FILO100",
+          "nombre": "Antropolog\u00eda Filos\u00f3fica",
+          "desbloquea": []
+        },
+        {
+          "codigo": "ENFE111",
+          "nombre": "Salud P\u00fablica I",
+          "desbloquea": [
+            "ENFE222"
+          ]
+        },
+        {
+          "codigo": "AUTO001",
+          "nombre": "Autocuidado",
+          "desbloquea": []
+        }
       ]
     },
     {
       "numero": 2,
       "ramos": [
-        { "codigo": "EFER203", "nombre": "Bases del cuidado", "desbloquea": [] },
-        { "codigo": "BIOL166", "nombre": "Bioquímica", "desbloquea": [] }
+        {
+          "codigo": "BIOL178",
+          "nombre": "Fisiolog\u00eda",
+          "desbloquea": [
+            "FARM233"
+          ]
+        },
+        {
+          "codigo": "BIOL166",
+          "nombre": "Bioqu\u00edmica",
+          "desbloquea": [
+            "FARM233"
+          ]
+        },
+        {
+          "codigo": "EFER203",
+          "nombre": "Bases del Cuidado",
+          "desbloquea": [
+            "EFER304",
+            "EFER305"
+          ]
+        },
+        {
+          "codigo": "ENFE222",
+          "nombre": "Salud P\u00fablica II",
+          "desbloquea": [
+            "ENFE333"
+          ]
+        },
+        {
+          "codigo": "ETIC201",
+          "nombre": "\u00c9tica",
+          "desbloquea": []
+        }
+      ]
+    },
+    {
+      "numero": 3,
+      "ramos": [
+        {
+          "codigo": "FARM233",
+          "nombre": "Farmacolog\u00eda",
+          "desbloquea": [
+            "EFER406"
+          ]
+        },
+        {
+          "codigo": "EFER304",
+          "nombre": "Proceso de Atenci\u00f3n en Enfermer\u00eda",
+          "desbloquea": [
+            "EFER406"
+          ]
+        },
+        {
+          "codigo": "EFER305",
+          "nombre": "Taller de Habilidades Cl\u00ednicas",
+          "desbloquea": [
+            "EFER406"
+          ]
+        },
+        {
+          "codigo": "ENFE333",
+          "nombre": "Salud P\u00fablica III",
+          "desbloquea": []
+        },
+        {
+          "codigo": "PSIC101",
+          "nombre": "Psicolog\u00eda del Desarrollo",
+          "desbloquea": []
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "ramos": [
+        {
+          "codigo": "EFER406",
+          "nombre": "Cuidado del Adulto I",
+          "desbloquea": [
+            "EFER507"
+          ]
+        },
+        {
+          "codigo": "ENFE444",
+          "nombre": "Gesti\u00f3n del Cuidado I",
+          "desbloquea": [
+            "ENFE555"
+          ]
+        },
+        {
+          "codigo": "METO101",
+          "nombre": "Metodolog\u00eda de la Investigaci\u00f3n",
+          "desbloquea": [
+            "TITO777"
+          ]
+        },
+        {
+          "codigo": "ENFE455",
+          "nombre": "Salud Familiar",
+          "desbloquea": []
+        },
+        {
+          "codigo": "SOCS001",
+          "nombre": "Sociolog\u00eda de la Salud",
+          "desbloquea": []
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "ramos": [
+        {
+          "codigo": "EFER507",
+          "nombre": "Cuidado del Adulto II",
+          "desbloquea": [
+            "EFER708"
+          ]
+        },
+        {
+          "codigo": "ENFE555",
+          "nombre": "Gesti\u00f3n del Cuidado II",
+          "desbloquea": []
+        },
+        {
+          "codigo": "ENFE566",
+          "nombre": "Cuidado del Ni\u00f1o y Adolescente",
+          "desbloquea": [
+            "EFER708"
+          ]
+        },
+        {
+          "codigo": "PSIC202",
+          "nombre": "Psicolog\u00eda de la Salud",
+          "desbloquea": []
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "ramos": [
+        {
+          "codigo": "EFER708",
+          "nombre": "Cuidado del Adulto Mayor",
+          "desbloquea": [
+            "EFER809",
+            "EFER810"
+          ]
+        },
+        {
+          "codigo": "ENFE666",
+          "nombre": "Salud Mental",
+          "desbloquea": [
+            "EFER809"
+          ]
+        },
+        {
+          "codigo": "GEST001",
+          "nombre": "Gesti\u00f3n en Red Asistencial",
+          "desbloquea": []
+        },
+        {
+          "codigo": "TITO777",
+          "nombre": "Trabajo de T\u00edtulo I",
+          "desbloquea": [
+            "TITO888"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "ramos": [
+        {
+          "codigo": "EFER809",
+          "nombre": "Cuidado del Paciente Cr\u00edtico",
+          "desbloquea": [
+            "PRAC901"
+          ]
+        },
+        {
+          "codigo": "EFER810",
+          "nombre": "Cuidado en la Comunidad",
+          "desbloquea": [
+            "PRAC902"
+          ]
+        },
+        {
+          "codigo": "TITO888",
+          "nombre": "Trabajo de T\u00edtulo II",
+          "desbloquea": []
+        },
+        {
+          "codigo": "DEON101",
+          "nombre": "Deontolog\u00eda Profesional",
+          "desbloquea": []
+        }
+      ]
+    },
+    {
+      "numero": 8,
+      "ramos": [
+        {
+          "codigo": "PRAC901",
+          "nombre": "Pr\u00e1ctica Cl\u00ednica I",
+          "desbloquea": [
+            "PRAC903"
+          ]
+        },
+        {
+          "codigo": "PRAC902",
+          "nombre": "Pr\u00e1ctica Comunitaria",
+          "desbloquea": [
+            "PRAC903"
+          ]
+        },
+        {
+          "codigo": "EVAL001",
+          "nombre": "Evaluaci\u00f3n del Aprendizaje",
+          "desbloquea": []
+        }
+      ]
+    },
+    {
+      "numero": 9,
+      "ramos": [
+        {
+          "codigo": "PRAC903",
+          "nombre": "Pr\u00e1ctica Cl\u00ednica Integral",
+          "desbloquea": [
+            "PRAC999"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 10,
+      "ramos": [
+        {
+          "codigo": "PRAC999",
+          "nombre": "Internado Profesional",
+          "desbloquea": []
+        }
       ]
     }
   ],

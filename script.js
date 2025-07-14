@@ -68,8 +68,10 @@ async function cargarMalla() {
         alert("¡Lo lograste, enfermer@! 🎉");
       }
     } else {
-      document.getElementById("estimacion").textContent = "";
-    }
+  const ingreso = new Date().getFullYear();
+  const egreso = ingreso + 4;
+  document.getElementById("estimacion").textContent = `Fecha estimada de término: diciembre ${egreso}`;
+}
   }
 
   function actualizarEstadoRamos() {

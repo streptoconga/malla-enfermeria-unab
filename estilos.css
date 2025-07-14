@@ -91,6 +91,9 @@ body.noche .semestre {
 }
 
 #barra-progreso {
+  position: relative;
+  background: #eee;
+
   background: #eee;
   border-radius: 10px;
   overflow: hidden;
@@ -99,17 +102,20 @@ body.noche .semestre {
   margin-bottom: 5px;
 }
 
-#barra-progreso::before {
-  content: '';
+#barra-interno {
+  
   display: block;
   background-color: #9b4dca;
   height: 100%;
-  width: 0%;
+  width: 0%; background-color: #9b4dca;
   transition: width 0.5s;
   position: absolute;
 }
 
 #porcentaje {
+  z-index: 2;
+  color: inherit;
+
   position: absolute;
   width: 100%;
   text-align: center;
@@ -161,4 +167,14 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   transform: translateX(20px);
+}
+
+
+#gallinita {
+  position: absolute;
+  top: -20px;
+  left: 0%;
+  height: 32px;
+  transition: left 0.5s ease;
+  z-index: 3;
 }

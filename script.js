@@ -134,6 +134,5 @@ async function cargarMalla() {
   }
 
   actualizarEstadoRamos();
-}
 
 document.addEventListener('DOMContentLoaded', cargarMalla);

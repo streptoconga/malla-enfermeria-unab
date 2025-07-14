@@ -20,6 +20,9 @@ titulo.textContent = `${semestre.numero}${sufijos[semestre.numero - 1]} semestre
       divRamo.dataset.codigo = ramo.codigo;
       divRamo.dataset.desbloquea = JSON.stringify(ramo.desbloquea || []);
 
+      if (semestre.numero === 1) {
+  divRamo.classList.add('primer-semestre');
+}
       if (completados.includes(ramo.codigo)) {
         divRamo.classList.add('completado');
         divRamo.classList.add('desbloqueado');

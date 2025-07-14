@@ -1,3 +1,4 @@
+
 async function cargarMalla() {
   const respuesta = await fetch('data/malla.json');
   const datos = await respuesta.json();
@@ -42,7 +43,6 @@ async function cargarMalla() {
   });
 
   function actualizarProgreso() {
-    const total = mapaRamos.size;
     const completadosCount = [...completados].filter(c => mapaRamos.has(c)).length;
     const porcentaje = Math.round((completadosCount / total) * 100);
 
@@ -54,7 +54,7 @@ async function cargarMalla() {
     if (gallina) gallina.style.left = `calc(${porcentaje}% - 16px)`;
     document.getElementById("porcentaje").textContent = `${porcentaje}%`;
 
-    const ingreso = 2020;
+    const ingreso = new Date().getFullYear();
     if (completadosCount >= total) {
       const egreso = ingreso + 4;
       document.getElementById("estimacion").textContent = `Fecha estimada de término: diciembre ${egreso}`;

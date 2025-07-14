@@ -79,7 +79,7 @@ async function cargarMalla() {
         const requeridos = ["EFER401", "FARM121", "SPAB111", "EFER403", "EFER402", "CEGHC01"];
         desbloqueado = requeridos.every(req => completados.has(req));
       } else {
-        desbloqueado = requisitos.length === 0 || requisitos.some(req => completados.has(req));
+        desbloqueado = requisitos.length === 0 || requisitos.every(req => completados.has(req));
       }
 
       if (completados.has(codigo)) {

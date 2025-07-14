@@ -1,4 +1,3 @@
-
 async function cargarMalla() {
   const respuesta = await fetch('data/malla.json');
   const datos = await respuesta.json();

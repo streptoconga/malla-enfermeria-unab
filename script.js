@@ -43,10 +43,10 @@ async function cargarMalla() {
   });
 
   function actualizarProgreso() {
+    const total = mapaRamos.size;
     const completadosCount = [...completados].filter(c => mapaRamos.has(c)).length;
     const porcentaje = Math.round((completadosCount / total) * 100);
 
-    const barraCont = document.getElementById("barra-progreso");
     const barraInterno = document.getElementById("barra-interno");
     const gallina = document.getElementById("gallinita");
 

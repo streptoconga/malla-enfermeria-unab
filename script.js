@@ -1,4 +1,3 @@
-
 async function cargarMalla() {
   const respuesta = await fetch('data/malla.json');
   const datos = await respuesta.json();
@@ -53,6 +52,20 @@ async function cargarMalla() {
     barraCont.querySelector("::before")?.style?.setProperty('width', `${porcentaje}%`);
 
     document.getElementById("porcentaje").textContent = `${porcentaje}%`;
+    const gallina = document.getElementById("gallinita");
+    if (gallina) gallina.style.left = `calc(${porcentaje}% - 16px)`;
+
+    const ingreso = 2020; // cambiar según tu cohorte
+    const totalSemestres = 10;
+    const total = mapaRamos.size;
+    const completadosCount = [...completados].filter(c => mapaRamos.has(c)).length;
+
+    if (completadosCount >= total) {
+      const egreso = ingreso + 4;
+      document.getElementById("estimacion").textContent = `Fecha estimada de término: diciembre ${egreso}`;
+    } else {
+      document.getElementById("estimacion").textContent = "";
+    }
     const gallina = document.getElementById("gallinita");
     if (gallina) gallina.style.left = `calc(${porcentaje}% - 16px)`;
 

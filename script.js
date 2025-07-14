@@ -1,3 +1,4 @@
+
 async function cargarMalla() {
   const respuesta = await fetch('data/malla.json');
   const datos = await respuesta.json();
@@ -22,7 +23,10 @@ async function cargarMalla() {
       divRamo.dataset.desbloquea = JSON.stringify(ramo.desbloquea || []);
       mapaRamos.set(ramo.codigo, divRamo);
 
-      if (semestre.numero === 1) divRamo.classList.add('primer-semestre');
+      if (semestre.numero === 1) {
+  divRamo.classList.add('primer-semestre');
+  divRamo.classList.add('desbloqueado');
+}
 
       // Invertir la relación: de cada desbloqueado, saber quién lo desbloquea
       for (const desbloqueado of ramo.desbloquea || []) {
@@ -42,8 +46,16 @@ async function cargarMalla() {
   function actualizarEstadoRamos() {
     mapaRamos.forEach((divRamo, codigo) => {
       const requisitos = mapaDesbloqueos.get(codigo) || [];
-      const desbloqueado = requisitos.length === 0 || requisitos.some(req => completados.has(req));
-      if (divRamo.classList.contains('primer-semestre') || completados.has(codigo)) {
+      
+      let desbloqueado;
+      if (codigo === "EFER504") {
+        const requeridos = ["EFER401", "FARM121", "SPAB111", "EFER403", "EFER402", "CEGHC01"];
+        desbloqueado = requeridos.every(req => completados.has(req));
+      } else {
+        desbloqueado = requisitos.length === 0 || requisitos.some(req => completados.has(req));
+      }
+
+      if (completados.has(codigo)) {
         divRamo.classList.add('desbloqueado');
         divRamo.classList.add('completado');
         if (!divRamo.textContent.includes('✓')) divRamo.textContent += ' ✓';

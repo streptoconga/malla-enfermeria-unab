@@ -53,6 +53,8 @@ async function cargarMalla() {
     barraCont.querySelector("::before")?.style?.setProperty('width', `${porcentaje}%`);
 
     document.getElementById("porcentaje").textContent = `${porcentaje}%`;
+    const gallina = document.getElementById("gallinita");
+    if (gallina) gallina.style.left = `calc(${porcentaje}% - 16px)`;
 
     const fechaActual = new Date();
     const avanceEsperadoPorSemestre = total / 10;

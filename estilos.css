@@ -1,8 +1,8 @@
 body {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 20px;
-  background-color: #fdf6f9;
+  background-color: #d0f0ff;
   color: #333;
 }
 
@@ -57,5 +57,6 @@ footer {
   text-align: center;
   margin-top: 50px;
   font-size: 14px;
-  color: #888;
+  font-family: 'Segoe UI', sans-serif;
+  color: #666;
 }

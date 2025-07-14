@@ -60,3 +60,12 @@ footer {
   font-family: 'Segoe UI', sans-serif;
   color: #666;
 }
+.ramo.primer-semestre {
+  background-color: #d65b98; /* rosado más oscuro */
+}
+
+.ramo.completado {
+  background-color: #c04787 !important; /* más oscuro al aprobar */
+  border: 2px solid #333;
+  text-decoration: line-through;
+}

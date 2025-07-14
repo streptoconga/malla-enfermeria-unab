@@ -8,7 +8,10 @@
           "nombre": "Morfolog\u00eda integral",
           "desbloquea": [
             "EFER203",
-            "BIOL178"
+            "BIOL178",
+            "EFER201",
+            "EFER202",
+            "CEGHC01"
           ]
         },
         {
@@ -38,7 +41,10 @@
           "nombre": "Bases te\u00f3ricas de enfermer\u00eda",
           "desbloquea": [
             "EFER203",
-            "EFER301"
+            "EFER301",
+            "EFER201",
+            "EFER202",
+            "CEGHC01"
           ]
         }
       ]

@@ -1,3 +1,4 @@
+
 async function cargarMalla() {
   const respuesta = await fetch('data/malla.json');
   const datos = await respuesta.json();
@@ -42,7 +43,7 @@ async function cargarMalla() {
   });
 
   function actualizarProgreso() {
-    const total = mapaRamos.size;
+    // const total eliminado para evitar duplicado
     const completadosCount = [...completados].filter(c => mapaRamos.has(c)).length;
     const porcentaje = Math.round((completadosCount / total) * 100);
 
@@ -57,7 +58,7 @@ async function cargarMalla() {
 
     const ingreso = 2020; // cambiar según tu cohorte
     const totalSemestres = 10;
-    const total = mapaRamos.size;
+    // const total eliminado para evitar duplicado
     const completadosCount = [...completados].filter(c => mapaRamos.has(c)).length;
 
     if (completadosCount >= total) {

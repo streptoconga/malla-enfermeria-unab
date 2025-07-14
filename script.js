@@ -43,17 +43,36 @@ async function cargarMalla() {
   });
 
   function actualizarProgreso() {
-    const total = mapaRamos.size;
-    const completadosCount = [...completados].filter(c => mapaRamos.has(c)).length;
-    const porcentaje = Math.round((completadosCount / total) * 100);
+  const total = mapaRamos.size;
+  const completadosCount = [...completados].filter(c => mapaRamos.has(c)).length;
+  const porcentaje = Math.round((completadosCount / total) * 100);
 
-    const barraInterno = document.getElementById("barra-interno");
-    const gallina = document.getElementById("gallinita");
+  const barraInterno = document.getElementById("barra-progreso")?.querySelector("#barra-interno");
+  const gallina = document.getElementById("gallinita");
 
-    if (barraInterno) barraInterno.style.width = `${porcentaje}%`;
-    if (gallina) gallina.style.left = `calc(${porcentaje}% - 16px)`;
-    document.getElementById("porcentaje").textContent = `${porcentaje}%`;
+  if (barraInterno) barraInterno.style.width = `${porcentaje}%`;
+  if (gallina) gallina.style.left = `calc(${porcentaje}% - 16px)`;
+  document.getElementById("porcentaje").textContent = `${porcentaje}%`;
 
+  // Calcular egreso dinámico
+  const ramosPorSemestre = total / 10;
+  const semestresCompletados = Math.floor(completadosCount / ramosPorSemestre);
+  const añosExtra = Math.floor(semestresCompletados / 2);
+  const añoActual = new Date().getFullYear();
+  const añoEgreso = añoActual + (5 - añosExtra);
+
+  document.getElementById("estimacion").textContent = `Fecha estimada de término: diciembre ${añoEgreso}`;
+
+  if (completadosCount >= total && !window._confetiMostrado) {
+    window._confetiMostrado = true;
+    confetti({
+      particleCount: 300,
+      spread: 150,
+      origin: { y: 0.6 }
+    });
+    alert("¡Lo lograste, enfermer@! 🎉");
+  }
+}
     const ingreso = new Date().getFullYear();
     if (completadosCount >= total) {
       const egreso = ingreso + 4;

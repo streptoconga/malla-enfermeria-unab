@@ -51,16 +51,12 @@
         {
           "codigo": "EFER201",
           "nombre": "Psicología evolutiva",
-          "requisitos": [
-            "EFER101"
-          ]
+          "requisitos": []
         },
         {
           "codigo": "EFER202",
           "nombre": "Socioantropología",
-          "requisitos": [
-            "EFER101"
-          ]
+          "requisitos": []
         },
         {
           "codigo": "EFER203",
@@ -73,9 +69,7 @@
         {
           "codigo": "CEGHC01",
           "nombre": "Habilidades comunicativas",
-          "requisitos": [
-            "EFER101"
-          ]
+          "requisitos": []
         }
       ]
     },
@@ -116,9 +110,7 @@
         {
           "codigo": "ING119",
           "nombre": "Inglés I",
-          "requisitos": [
-            "EFER101"
-          ]
+          "requisitos": []
         }
       ]
     },
@@ -129,8 +121,8 @@
           "codigo": "EFER401",
           "nombre": "Fisiopatología",
           "requisitos": [
-            "EFER402",
-            "BIOL178"
+            "BIOL178",
+            "EFER402"
           ]
         },
         {
@@ -160,8 +152,8 @@
           "codigo": "EFER402",
           "nombre": "Cuidados de enfermería en adulto y adulto mayor",
           "requisitos": [
-            "EFER302",
-            "EFER401"
+            "EFER401",
+            "EFER302"
           ]
         },
         {
@@ -188,19 +180,19 @@
           "codigo": "EFER501",
           "nombre": "Cuidados de enfermería en salud familiar",
           "requisitos": [
+            "EFER502",
             "SPAB111",
-            "EFER403",
-            "EFER502"
+            "EFER403"
           ]
         },
         {
           "codigo": "EFER502",
           "nombre": "Cuidados de enfermería en el niño y adulto",
           "requisitos": [
-            "EFER402",
             "EFER401",
             "EFER504",
-            "EFER501"
+            "EFER501",
+            "EFER402"
           ]
         },
         {
@@ -214,13 +206,13 @@
           "codigo": "EFER504",
           "nombre": "Integrador I Cuidado de enfermería I",
           "requisitos": [
-            "EFER402",
-            "CEGHC01",
-            "SPAB111",
+            "EFER401",
             "EFER502",
-            "FARM121",
+            "CEGHC01",
             "EFER403",
-            "EFER401"
+            "SPAB111",
+            "EFER402",
+            "FARM121"
           ]
         },
         {
@@ -277,9 +269,7 @@
         {
           "codigo": "CEGCT01",
           "nombre": "Razonamiento científico y tecnologías de información",
-          "requisitos": [
-            "EFER101"
-          ]
+          "requisitos": []
         }
       ]
     },
@@ -331,10 +321,10 @@
           "codigo": "EFER801",
           "nombre": "Cuidado integral del niño y adulto",
           "requisitos": [
-            "EFER602",
             "EFER803",
-            "EFER701",
-            "EFER703"
+            "EFER703",
+            "EFER602",
+            "EFER701"
           ]
         },
         {
@@ -350,12 +340,12 @@
           "codigo": "EFER803",
           "nombre": "Integrador II Cuidado de enfermería II",
           "requisitos": [
-            "EFER705",
-            "EFER801",
             "EFER703",
-            "EFER602",
+            "EFER801",
+            "EFER705",
             "EFER701",
-            "EFER702"
+            "EFER702",
+            "EFER602"
           ]
         },
         {

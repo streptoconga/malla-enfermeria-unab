@@ -5,47 +5,28 @@
       "ramos": [
         {
           "codigo": "MORF011",
-          "nombre": "Morfolog\u00eda integral",
-          "desbloquea": [
-            "EFER203",
-            "BIOL178",
-            "EFER201",
-            "EFER202",
-            "CEGHC01"
-          ]
+          "nombre": "Morfología integral",
+          "requisitos": []
         },
         {
           "codigo": "QUIM001",
-          "nombre": "Qu\u00edmica general y org\u00e1nica",
-          "desbloquea": [
-            "BIOL166"
-          ]
+          "nombre": "Química general y orgánica",
+          "requisitos": []
         },
         {
           "codigo": "BIOL034",
-          "nombre": "Biolog\u00eda Celular",
-          "desbloquea": [
-            "BIOL166",
-            "BIOL150"
-          ]
+          "nombre": "Biología Celular",
+          "requisitos": []
         },
         {
           "codigo": "FMMP001",
-          "nombre": "Razonamiento matem\u00e1tico",
-          "desbloquea": [
-            "SPAB110"
-          ]
+          "nombre": "Razonamiento matemático",
+          "requisitos": []
         },
         {
           "codigo": "EFER101",
-          "nombre": "Bases te\u00f3ricas de enfermer\u00eda",
-          "desbloquea": [
-            "EFER203",
-            "EFER301",
-            "EFER201",
-            "EFER202",
-            "CEGHC01"
-          ]
+          "nombre": "Bases teóricas de enfermería",
+          "requisitos": []
         }
       ]
     },
@@ -54,48 +35,41 @@
       "ramos": [
         {
           "codigo": "BIOL150",
-          "nombre": "Microbiolog\u00eda",
-          "desbloquea": [
-            "FARM121"
+          "nombre": "Microbiología",
+          "requisitos": [
+            "BIOL034"
           ]
         },
         {
           "codigo": "BIOL166",
-          "nombre": "Bioqu\u00edmica",
-          "desbloquea": [
-            "FARM121"
+          "nombre": "Bioquímica",
+          "requisitos": [
+            "QUIM001",
+            "BIOL034"
           ]
         },
         {
           "codigo": "EFER201",
-          "nombre": "Psicolog\u00eda evolutiva",
-          "desbloquea": [
-            "EFER302"
-          ]
+          "nombre": "Psicología evolutiva",
+          "requisitos": []
         },
         {
           "codigo": "EFER202",
-          "nombre": "Socioantropolog\u00eda",
-          "desbloquea": [
-            "EFER301"
-          ]
+          "nombre": "Socioantropología",
+          "requisitos": []
         },
         {
           "codigo": "EFER203",
-          "nombre": "Bases del cuidado de enfermer\u00eda",
-          "desbloquea": [
-            "EFER302",
-            "SPAB110"
+          "nombre": "Bases del cuidado de enfermería",
+          "requisitos": [
+            "MORF011",
+            "EFER101"
           ]
         },
         {
           "codigo": "CEGHC01",
           "nombre": "Habilidades comunicativas",
-          "desbloquea": [
-            "EFER504",
-            "CEGCT01",
-            "ING119"
-          ]
+          "requisitos": []
         }
       ]
     },
@@ -104,39 +78,39 @@
       "ramos": [
         {
           "codigo": "BIOL178",
-          "nombre": "Fisiolog\u00eda",
-          "desbloquea": [
-            "EFER401"
+          "nombre": "Fisiología",
+          "requisitos": [
+            "MORF011"
           ]
         },
         {
           "codigo": "SPAB110",
-          "nombre": "Salud p\u00fablica I",
-          "desbloquea": [
-            "SPAB111"
+          "nombre": "Salud pública I",
+          "requisitos": [
+            "FMMP001",
+            "EFER203"
           ]
         },
         {
           "codigo": "EFER301",
-          "nombre": "Enfermer\u00eda en la promoci\u00f3n y prevenci\u00f3n en salud",
-          "desbloquea": [
-            "SPAB111",
-            "EFER403"
+          "nombre": "Enfermería en la promoción y prevención en salud",
+          "requisitos": [
+            "EFER101",
+            "EFER202"
           ]
         },
         {
           "codigo": "EFER302",
-          "nombre": "Cuidados de enfermer\u00eda en el ciclo vital",
-          "desbloquea": [
-            "EFER402"
+          "nombre": "Cuidados de enfermería en el ciclo vital",
+          "requisitos": [
+            "EFER201",
+            "EFER203"
           ]
         },
         {
           "codigo": "ING119",
-          "nombre": "Ingl\u00e9s I",
-          "desbloquea": [
-            "ING129"
-          ]
+          "nombre": "Inglés I",
+          "requisitos": []
         }
       ]
     },
@@ -145,52 +119,48 @@
       "ramos": [
         {
           "codigo": "EFER401",
-          "nombre": "Fisiopatolog\u00eda",
-          "desbloquea": [
-            "FARM122",
-            "EFER502",
-            "EFER504"
+          "nombre": "Fisiopatología",
+          "requisitos": [
+            "EFER402",
+            "BIOL178"
           ]
         },
         {
           "codigo": "FARM121",
-          "nombre": "Farmacolog\u00eda general",
-          "desbloquea": [
-            "EFER504",
-            "FARM122"
+          "nombre": "Farmacología general",
+          "requisitos": [
+            "BIOL150",
+            "BIOL166"
           ]
         },
         {
           "codigo": "SPAB111",
-          "nombre": "Salud p\u00fablica II",
-          "desbloquea": [
-            "EFER504",
-            "EFER503",
-            "EFER501"
+          "nombre": "Salud pública II",
+          "requisitos": [
+            "SPAB110",
+            "EFER301"
           ]
         },
         {
           "codigo": "EFER403",
-          "nombre": "Bases de enfermer\u00eda en salud familiar y comunitaria",
-          "desbloquea": [
-            "EFER504",
-            "EFER501"
+          "nombre": "Bases de enfermería en salud familiar y comunitaria",
+          "requisitos": [
+            "EFER301"
           ]
         },
         {
           "codigo": "EFER402",
-          "nombre": "Cuidados de enfermer\u00eda en adulto y adulto mayor",
-          "desbloquea": [
-            "EFER504",
-            "EFER603",
-            "EFER502"
+          "nombre": "Cuidados de enfermería en adulto y adulto mayor",
+          "requisitos": [
+            "EFER302",
+            "EFER401"
           ]
         },
         {
           "codigo": "ING129",
-          "nombre": "Ingl\u00e9s II",
-          "desbloquea": [
-            "ING239"
+          "nombre": "Inglés II",
+          "requisitos": [
+            "ING119"
           ]
         }
       ]
@@ -200,49 +170,56 @@
       "ramos": [
         {
           "codigo": "FARM122",
-          "nombre": "Farmacolog\u00eda cl\u00ednica y farmacovigilancia",
-          "desbloquea": [
-            "EFER602"
+          "nombre": "Farmacología clínica y farmacovigilancia",
+          "requisitos": [
+            "EFER401",
+            "FARM121"
           ]
         },
         {
           "codigo": "EFER501",
-          "nombre": "Cuidados de enfermer\u00eda en salud familiar",
-          "desbloquea": [
-            "EFER601"
+          "nombre": "Cuidados de enfermería en salud familiar",
+          "requisitos": [
+            "SPAB111",
+            "EFER403",
+            "EFER502"
           ]
         },
         {
           "codigo": "EFER502",
-          "nombre": "Cuidados de enfermer\u00eda en el ni\u00f1o y adulto",
-          "desbloquea": [
-            "EFER602",
-            "EFER703"
+          "nombre": "Cuidados de enfermería en el niño y adulto",
+          "requisitos": [
+            "EFER402",
+            "EFER401",
+            "EFER504",
+            "EFER501"
           ]
         },
         {
           "codigo": "EFER503",
-          "nombre": "Fundamentos de gesti\u00f3n y liderazgo en enfermer\u00eda",
-          "desbloquea": [
-            "EFER604",
-            "EFER603"
+          "nombre": "Fundamentos de gestión y liderazgo en enfermería",
+          "requisitos": [
+            "SPAB111"
           ]
         },
         {
           "codigo": "EFER504",
-          "nombre": "Integrador I Cuidado de enfermer\u00eda I",
-          "desbloquea": [
-            "EFER703",
-            "EFER701",
-            "EFER602",
-            "EFER601"
+          "nombre": "Integrador I Cuidado de enfermería I",
+          "requisitos": [
+            "EFER402",
+            "CEGHC01",
+            "SPAB111",
+            "EFER502",
+            "FARM121",
+            "EFER403",
+            "EFER401"
           ]
         },
         {
           "codigo": "ING239",
-          "nombre": "Ingl\u00e9s III",
-          "desbloquea": [
-            "ING249"
+          "nombre": "Inglés III",
+          "requisitos": [
+            "ING129"
           ]
         }
       ]
@@ -252,46 +229,47 @@
       "ramos": [
         {
           "codigo": "EFER601",
-          "nombre": "Cuidados de enfermer\u00eda en salud mental y comunidad",
-          "desbloquea": [
-            "EFER702"
+          "nombre": "Cuidados de enfermería en salud mental y comunidad",
+          "requisitos": [
+            "EFER501",
+            "EFER504"
           ]
         },
         {
           "codigo": "EFER602",
-          "nombre": "Cuidados de enfermer\u00eda en el adulto y adulto mayor con alteraciones de salud",
-          "desbloquea": [
-            "EFER801",
-            "EFER803"
+          "nombre": "Cuidados de enfermería en el adulto y adulto mayor con alteraciones de salud",
+          "requisitos": [
+            "FARM122",
+            "EFER502",
+            "EFER504"
           ]
         },
         {
           "codigo": "EFER603",
-          "nombre": "M\u00e9todos de an\u00e1lisis en enfermer\u00eda",
-          "desbloquea": [
-            "EFER802"
+          "nombre": "Métodos de análisis en enfermería",
+          "requisitos": [
+            "EFER402",
+            "EFER503"
           ]
         },
         {
           "codigo": "EFER604",
-          "nombre": "Administraci\u00f3n en unidades de enfermer\u00eda",
-          "desbloquea": [
-            "EFER705"
+          "nombre": "Administración en unidades de enfermería",
+          "requisitos": [
+            "EFER503"
           ]
         },
         {
           "codigo": "ING249",
-          "nombre": "Ingl\u00e9s IV",
-          "desbloquea": [
-            "EFER802"
+          "nombre": "Inglés IV",
+          "requisitos": [
+            "ING239"
           ]
         },
         {
           "codigo": "CEGCT01",
-          "nombre": "Razonamiento cient\u00edfico y tecnolog\u00edas de informaci\u00f3n",
-          "desbloquea": [
-            "CEGPC01"
-          ]
+          "nombre": "Razonamiento científico y tecnologías de información",
+          "requisitos": []
         }
       ]
     },
@@ -300,40 +278,38 @@
       "ramos": [
         {
           "codigo": "EFER701",
-          "nombre": "\u00c9tica y legislaci\u00f3n en enfermer\u00eda",
-          "desbloquea": [
-            "EFER801",
-            "EFER802",
-            "EFER803"
+          "nombre": "Ética y legislación en enfermería",
+          "requisitos": [
+            "EFER504"
           ]
         },
         {
           "codigo": "EFER702",
-          "nombre": "Cuidados de enfermer\u00eda en salud familiar y comunitaria",
-          "desbloquea": [
-            "EFER803"
+          "nombre": "Cuidados de enfermería en salud familiar y comunitaria",
+          "requisitos": [
+            "EFER601"
           ]
         },
         {
           "codigo": "EFER703",
-          "nombre": "Cuidados de enfermer\u00eda en el ni\u00f1o y adolescente con alteraciones en la salud",
-          "desbloquea": [
-            "EFER803",
-            "EFER801"
+          "nombre": "Cuidados de enfermería en el niño y adolescente con alteraciones en la salud",
+          "requisitos": [
+            "EFER502",
+            "EFER504"
           ]
         },
         {
           "codigo": "EFER705",
-          "nombre": "Desarrollo de proyectos en enfermer\u00eda",
-          "desbloquea": [
-            "EFER803"
+          "nombre": "Desarrollo de proyectos en enfermería",
+          "requisitos": [
+            "EFER604"
           ]
         },
         {
           "codigo": "CEGPC01",
-          "nombre": "Pensamiento cr\u00edtico",
-          "desbloquea": [
-            "CEGRS01"
+          "nombre": "Pensamiento crítico",
+          "requisitos": [
+            "CEGCT01"
           ]
         }
       ]
@@ -343,34 +319,40 @@
       "ramos": [
         {
           "codigo": "EFER801",
-          "nombre": "Cuidado integral del ni\u00f1o y adulto",
-          "desbloquea": [
-            "EFER1001",
-            "EFER901"
+          "nombre": "Cuidado integral del niño y adulto",
+          "requisitos": [
+            "EFER602",
+            "EFER803",
+            "EFER701",
+            "EFER703"
           ]
         },
         {
           "codigo": "EFER802",
-          "nombre": "Seminario de investigaci\u00f3n en enfermer\u00eda",
-          "desbloquea": [
-            "EFER1001",
-            "EFER901"
+          "nombre": "Seminario de investigación en enfermería",
+          "requisitos": [
+            "EFER603",
+            "ING249",
+            "EFER701"
           ]
         },
         {
           "codigo": "EFER803",
-          "nombre": "Integrador II Cuidado de enfermer\u00eda II",
-          "desbloquea": [
-            "EFER1001",
-            "EFER901"
+          "nombre": "Integrador II Cuidado de enfermería II",
+          "requisitos": [
+            "EFER705",
+            "EFER801",
+            "EFER703",
+            "EFER602",
+            "EFER701",
+            "EFER702"
           ]
         },
         {
           "codigo": "CEGRS01",
           "nombre": "Responsabilidad social",
-          "desbloquea": [
-            "EFER1001",
-            "EFER901"
+          "requisitos": [
+            "CEGPC01"
           ]
         }
       ]
@@ -380,8 +362,13 @@
       "ramos": [
         {
           "codigo": "EFER901",
-          "nombre": "Gesti\u00f3n del cuidado en unidades de enfermer\u00eda",
-          "desbloquea": []
+          "nombre": "Gestión del cuidado en unidades de enfermería",
+          "requisitos": [
+            "EFER801",
+            "EFER802",
+            "EFER803",
+            "CEGRS01"
+          ]
         }
       ]
     },
@@ -390,28 +377,15 @@
       "ramos": [
         {
           "codigo": "EFER1001",
-          "nombre": "Gesti\u00f3n del cuidado en salud familiar y comunitaria",
-          "desbloquea": []
+          "nombre": "Gestión del cuidado en salud familiar y comunitaria",
+          "requisitos": [
+            "EFER801",
+            "EFER802",
+            "EFER803",
+            "CEGRS01"
+          ]
         }
       ]
     }
-  ],
-  "correquisitos": [
-    [
-      "EFER401",
-      "EFER402"
-    ],
-    [
-      "EFER501",
-      "EFER502"
-    ],
-    [
-      "EFER502",
-      "EFER504"
-    ],
-    [
-      "EFER801",
-      "EFER803"
-    ]
   ]
 }

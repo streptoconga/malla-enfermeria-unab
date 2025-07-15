@@ -51,12 +51,16 @@
         {
           "codigo": "EFER201",
           "nombre": "Psicología evolutiva",
-          "requisitos": []
+          "requisitos": [
+            "EFER101"
+          ]
         },
         {
           "codigo": "EFER202",
           "nombre": "Socioantropología",
-          "requisitos": []
+          "requisitos": [
+            "EFER101"
+          ]
         },
         {
           "codigo": "EFER203",
@@ -69,7 +73,9 @@
         {
           "codigo": "CEGHC01",
           "nombre": "Habilidades comunicativas",
-          "requisitos": []
+          "requisitos": [
+            "EFER101"
+          ]
         }
       ]
     },
@@ -110,7 +116,9 @@
         {
           "codigo": "ING119",
           "nombre": "Inglés I",
-          "requisitos": []
+          "requisitos": [
+            "EFER101"
+          ]
         }
       ]
     },
@@ -269,7 +277,9 @@
         {
           "codigo": "CEGCT01",
           "nombre": "Razonamiento científico y tecnologías de información",
-          "requisitos": []
+          "requisitos": [
+            "EFER101"
+          ]
         }
       ]
     },

@@ -40,15 +40,23 @@ function inicializarMalla(data) {
         if (!boton.classList.contains("desbloqueado") && !boton.classList.contains("aprobado")) return;
 
         boton.classList.toggle("aprobado");
-        const codigo = boton.dataset.codigo;
-        if (completados.has(codigo)) {
-          completados.delete(codigo);
-        } else {
-          completados.add(codigo);
-        }
 
-        actualizarEstadoRamos();
-        actualizarProgreso();
+if (boton.classList.contains("aprobado") && !boton.textContent.includes("✓")) {
+  boton.textContent += " ✓";
+} else if (!boton.classList.contains("aprobado")) {
+  boton.textContent = boton.textContent.replace(" ✓", "");
+}
+
+const codigo = boton.dataset.codigo;
+if (completados.has(codigo)) {
+  completados.delete(codigo);
+} else {
+  completados.add(codigo);
+}
+
+actualizarEstadoRamos();
+actualizarProgreso();
+
       });
 
       columna.appendChild(boton);

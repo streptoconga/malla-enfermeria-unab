@@ -73,15 +73,30 @@ actualizarProgreso();
 function actualizarEstadoRamos() {
   mapaRamos.forEach((ramo, codigo) => {
     const requisitos = ramo.requisitos || [];
-    const desbloqueado = requisitos.every(r => completados.has(r));
-    const estaAprobado = completados.has(codigo);
 
-    ramo.element.classList.toggle("desbloqueado", desbloqueado || estaAprobado);
-    ramo.element.classList.toggle("bloqueado", !desbloqueado && !estaAprobado);
-    ramo.element.classList.toggle("aprobado", estaAprobado);
+    // SOLO desbloquea si todos los requisitos están aprobados
+    const desbloqueado = requisitos.every(r => completados.has(r));
+
+    const aprobado = completados.has(codigo);
+
+    // Limpiar estados anteriores
+    ramo.element.classList.remove(
+      "bloqueado",
+      "desbloqueado",
+      "aprobado"
+    );
+
+    if (aprobado) {
+      ramo.element.classList.add("aprobado");
+    } else if (desbloqueado || requisitos.length === 0) {
+      ramo.element.classList.add("desbloqueado");
+    } else {
+      ramo.element.classList.add("bloqueado");
+    }
   });
 
   guardarEnLocalStorage();
+}
 }
 
 function actualizarProgreso() {

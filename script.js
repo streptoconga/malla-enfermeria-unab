@@ -36,11 +36,11 @@ function inicializarMalla(data) {
       boton.classList.add("ramo");
       boton.classList.add("bloqueado");
 
-      mapaRamos.set(ramo.codigo, {
-        element: boton,
-        desbloquea: ramo.desbloquea || [],
-        requisitos: ramo.requisitos || []
-      });
+     mapaRamos.set(ramo.codigo, {
+  element: boton,
+  desbloquea: ramo.desbloquea || [],
+  requisitos: []
+});
 
       boton.addEventListener("click", () => {
 
@@ -80,7 +80,20 @@ function inicializarMalla(data) {
 
     contenedor.appendChild(columna);
   });
+// Generar requisitos automáticamente
+mapaRamos.forEach((ramoActual, codigoActual) => {
 
+  mapaRamos.forEach((otroRamo, codigoOtro) => {
+
+    if (
+      otroRamo.desbloquea.includes(codigoActual)
+    ) {
+      ramoActual.requisitos.push(codigoOtro);
+    }
+
+  });
+
+});
   cargarDesdeLocalStorage();
   actualizarEstadoRamos();
   actualizarProgreso();

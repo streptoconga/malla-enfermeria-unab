@@ -1,14 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 
+:root {
+  --bg: #e3f2fd;
+  --text: #222;
+  --card: #ffffff;
+  --card-dark: #2b223d;
+
+  --locked: #d4d4d4;
+  --unlocked: #f4c6dc;
+  --approved: #c06cab;
+
+  --accent: #9b4dca;
+}
 body {
-  font-family: sans-serif;
-  background-color: #e3f2fd;
-  color: #333;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
   margin: 0;
   padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body.noche {
-  background-color: #3d2d5f;
+  background-color: #181420;
   color: white;
 }
 
@@ -159,5 +173,29 @@ input:checked + .slider:before {
   font-weight: bold;
 }
 body.noche h3 {
+  color: white;
+}
+body.noche .semestre {
+  background-color: var(--card-dark);
+}
+
+body.noche .ramo.bloqueado {
+  background-color: #4c4c4c;
+  color: #d8d8d8;
+}
+
+body.noche .ramo.desbloqueado {
+  background-color: #b67ccf;
+  color: white;
+}
+
+body.noche .ramo.aprobado {
+  background-color: #7d3c98;
+  color: white;
+}
+
+body.noche h1,
+body.noche h3,
+body.noche footer {
   color: white;
 }

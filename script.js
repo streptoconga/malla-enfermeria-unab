@@ -97,7 +97,6 @@ function actualizarEstadoRamos() {
 
   guardarEnLocalStorage();
 }
-}
 
 function actualizarProgreso() {
   const total = mapaRamos.size;

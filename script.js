@@ -111,14 +111,28 @@ function actualizarProgreso() {
   if (gallina) gallina.style.left = `calc(${porcentaje}% - 16px)`;
   document.getElementById("porcentaje").textContent = `${porcentaje}%`;
 
-  // Calcular egreso dinámico
-  const ramosPorSemestre = total / 10;
-  const semestresCompletados = Math.floor(completadosCount / ramosPorSemestre);
-  const añosExtra = Math.floor(semestresCompletados / 2);
-  const añoActual = new Date().getFullYear();
-  const añoEgreso = añoActual + (5 - añosExtra);
+  // Calcular avance real por semestre
+const ramosPorSemestre = total / 10;
 
-  document.getElementById("estimacion").textContent = `Fecha estimada de término: diciembre ${añoEgreso}`;
+const semestreActual = Math.ceil(
+  completadosCount / ramosPorSemestre
+);
+
+const semestresRestantes = Math.max(
+  0,
+  10 - semestreActual
+);
+
+const añosRestantes = Math.ceil(
+  semestresRestantes / 2
+);
+
+const añoActual = new Date().getFullYear();
+
+const añoEgreso = añoActual + añosRestantes;
+
+document.getElementById("estimacion").textContent =
+  `Fecha estimada de término: diciembre ${añoEgreso}`;
 
   if (completadosCount >= total && !window._confetiMostrado) {
     window._confetiMostrado = true;
